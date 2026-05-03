@@ -1,0 +1,10 @@
+# render.yaml — Configuration déploiement Render.com
+services:
+  - type: web
+    name: plant-disease-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 8000
