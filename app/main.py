@@ -23,7 +23,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, HttpUrl
 
 from app.predictor import PlantPredictor
-from app.utils import image_to_base64, generate_mask_overlay
+from app.utils import image_to_base64, generate_overlay
 
 # ─── Modèle chargé au démarrage ────────────────────────────────────────────
 predictor: Optional[PlantPredictor] = None
